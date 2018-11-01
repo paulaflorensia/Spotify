@@ -1,24 +1,20 @@
-import React, { Component } from 'react';
-import { Link } from 'react-router-dom';
+import React from 'react';
+import { NavLink } from 'react-router-dom';
 //css
 import './flowHistory.css';
 
 
-class FlowHisotry extends Component {
-    render() {
+const FlowHisotry = () => {
         return (
-            <div>
-                <nav className="flow-history__nav">
-                    <ul className="flow-history__ul">
-                        <li className="flow-history__li"><Link className="flow-history__link" to="/home">> Home</Link></li>
-                        <li className="flow-history__li"><Link className="flow-history__link" to="/artist">> Artist</Link></li>
-                        <li className="flow-history__li"><Link className="flow-history__link" to="/albums">> Album</Link></li>
-                        <li className="flow-history__li"><Link className="flow-history__link" to="/songs">> Song</Link></li>
-                    </ul>
-                </nav>
+            <div className="flow-history__nav">
+                <NavLink className="flow-history__link-home" to="/home">Home</NavLink>
+                <li className="flow-history__link">Results:</li>
+                <NavLink className="flow-history__link" to="/artist">Artist</NavLink>
+                <NavLink className="flow-history__link" to="/albums">Albums</NavLink>
+                <NavLink className="flow-history__link" to="/songs">Songs</NavLink>
             </div>
         );
-    }
-}
+
+    };
 
 export default FlowHisotry;

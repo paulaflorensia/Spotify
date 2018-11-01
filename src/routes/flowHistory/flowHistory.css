@@ -5,22 +5,24 @@
 }
 
 .flow-history__nav {
+    margin-top: 20px;
+    margin-bottom: 20px;
     margin-left: 20%;
     display: block;
-}
-
-.flow-history__ul {
     list-style: none;
     display: flex;
 }
 
-.flow-history__li {
-    margin-right: 10px;
-    
-}
-
 .flow-history__link {
+    margin-right: 10px;
     text-decoration: none;
     color: rgb(90, 90, 90);
+    font-size: 13px;
+}
+
+.flow-history__link-home {
+    margin-right: 10px;
+    text-decoration: none;
+    color: rgb(80, 80, 80);
     font-size: 13px;
 }

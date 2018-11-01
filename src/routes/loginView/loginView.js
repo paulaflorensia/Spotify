@@ -21,9 +21,18 @@ class LoginView extends Component {
 	}
     render() {
         return (
-        	<div id="login-view">
-            	<button type="button" className="login-view__button" onClick={this.handleClick}>TRY IT</button>
-            </div>
+			<article className="login-view">
+                <div className="login-view__welcome">
+                    <h4 className="login-view__subtitle">Welcome to</h4>
+                    <h1 className="login-view__title">Spotisearch</h1>
+                    <p className="login-view__paragraph">
+                    Find your favorite artist over Spotify and listen his songs!
+                    </p>
+                </div>    
+				<div id="login-view">
+            		<button type="button" className="login-view__button" onClick={this.handleClick}>TRY IT</button>
+				</div>
+            </article>
         );
     }
 }

@@ -5,26 +5,24 @@
 }
 
 .search-box__input {
-    margin-left: 20%;
+    margin-left: 25%;
     position: relative;
     font-family: Trebuchet MS, sans-serif; color: white;
     padding-left: 10px;
-    width: 55%;
-    height: 35px;
+    padding: 10px;
+    width: 50%;
     border-style: none;
-    border: 1px solid white; border-radius: 17px;
+    border: 1px solid white; border-radius: 18px;
     background-color: rgba(255, 255, 255, .0); 
-    margin-bottom: 20px;
 }
 
 .search-box__button {
     margin-left: 72%;
     position: absolute;
-    font-family: Trebuchet MS, sans-serif;
     border-style: none;
     background-color: rgba(255, 255, 255, .0);
     cursor: pointer;
-    margin-top: 3px;
+    margin-top: 4px;
     margin-bottom: 3px;
 }
 

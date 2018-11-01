@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 //css
-import '../searchBox/searchBox.css';
+import './searchBox.css';
 //assets
 import search_icon from '../../assets/search_icon.svg';
 

@@ -10,3 +10,26 @@
     cursor: pointer;
 
 }
+
+.login-view__welcome {
+    margin-left: 20%;
+    text-align: left;
+    color: #ffffff;
+  }
+  
+  
+.login-view__subtitle {
+    margin-top: 50px;
+  }
+  
+.login-view__title {
+    font-size: 3em;  
+    margin-bottom: 10px;
+  }
+  
+ .login-view__paragraph {
+    margin-top: 20px;
+    margin-bottom: 40px;
+  }
+  
+  

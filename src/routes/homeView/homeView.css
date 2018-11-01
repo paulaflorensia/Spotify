@@ -1,36 +1,12 @@
-.home-view {
-  margin: auto;
-  width: 100%;
-}
-.home-view__logo {
-  /*animation: App-logo-spin infinite 20s linear;*/
-  height: 42px;
-}
-
-.home-view__header {
-  background-color: #222;
-  height: 85px;
-  padding: 20px;
-}
-
 .home-view__welcome {
-  text-align: left;
-  margin-left: 20%;
+  margin: auto;
+  text-align: center;
   color: #ffffff;
 }
 
-
-.home-view__subtitle {
-  margin-top: 50px;
-}
-
-.home-view__title {
-  font-size: 3em;  
-  margin-bottom: 10px;
-}
-
 .home-view__paragraph {
-  margin-top: 20px;
+  font-size: 1em;
+  margin-top: 50px;
   margin-bottom: 40px;
 }
 

@@ -26,18 +26,14 @@ class MainView extends Component {
         return (
 			<article className="main-view">
                 <header className="main-view__header">
-                <Link to="/home"><img src={logo_spotify} className="main-view__logo" alt="logo"/></Link>
+                <Link to="/"><img src={logo_spotify} className="main-view__logo" alt="logo"/></Link>
                 </header>
-                <div>
-                    <div className="main-view__welcome">
-                        <h4 className="main-view__subtitle">Welcome to</h4>
-                        <h1 className="main-view__title">Spotisearch</h1>
-                        <p className="main-view__paragraph">
-                            Find your favorite artist and listen his songs!
-                        </p>
-                    </div>    
-                </div>
+
+                <footer className="main-view__footer">
+                    <p className="main-view__footer-p">Copyright &#169; 2018 Spotify AB. Spotify is a trademark of the Spotify Group</p>
+                </footer>
             </article>
+           
         );
     }
 }
