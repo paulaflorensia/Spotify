@@ -1,0 +1,42 @@
+.main-view {
+  margin: auto;
+  width: 100%;
+}
+.main-view__logo {
+  /*animation: App-logo-spin infinite 20s linear;*/
+  height: 42px;
+}
+
+.main-view__header {
+  background-color: #222;
+  height: 85px;
+  padding: 20px;
+}
+
+.main-view__welcome {
+  text-align: left;
+  margin-left: 20%;
+  color: #ffffff;
+}
+
+
+.main-view__subtitle {
+  margin-top: 50px;
+}
+
+.main-view__title {
+  font-size: 3em;  
+  margin-bottom: 10px;
+}
+
+.main-view__paragraph {
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+
+
+
+/*@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}*/

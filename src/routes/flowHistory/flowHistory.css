@@ -1,0 +1,26 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.flow-history__nav {
+    margin-left: 20%;
+    display: block;
+}
+
+.flow-history__ul {
+    list-style: none;
+    display: flex;
+}
+
+.flow-history__li {
+    margin-right: 10px;
+    
+}
+
+.flow-history__link {
+    text-decoration: none;
+    color: rgb(90, 90, 90);
+    font-size: 13px;
+}

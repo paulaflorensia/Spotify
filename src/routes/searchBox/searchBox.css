@@ -1,0 +1,40 @@
+.search-box {
+    width: 100%;
+    margin: auto;
+    display: flex;
+}
+
+.search-box__input {
+    margin-left: 20%;
+    position: relative;
+    font-family: Trebuchet MS, sans-serif; color: white;
+    padding-left: 10px;
+    width: 55%;
+    height: 35px;
+    border-style: none;
+    border: 1px solid white; border-radius: 17px;
+    background-color: rgba(255, 255, 255, .0); 
+    margin-bottom: 20px;
+}
+
+.search-box__button {
+    margin-left: 72%;
+    position: absolute;
+    font-family: Trebuchet MS, sans-serif;
+    border-style: none;
+    background-color: rgba(255, 255, 255, .0);
+    cursor: pointer;
+    margin-top: 3px;
+    margin-bottom: 3px;
+}
+
+.search-box__icon  {
+    height: 29px;
+    
+}
+
+.search-box__link {
+    margin: 0;
+    padding: 0;
+}
+
