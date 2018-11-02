@@ -1,11 +1,18 @@
 import React, { Component } from 'react';
+import SearchBox from '../searchBox/searchBox';
+import FlowHistory from '../flowHistory/flowHistory';
 
 class SongsList extends Component {
     render() {
         return (
-            <article className="song-list">
+            <div>
+                <SearchBox></SearchBox>
+                <FlowHistory></FlowHistory>
+                <article className="song-list">
                 Song list
-            </article>
+                </article>
+                <button type="search" className="prueba">Play</button>
+            </div>
         );
     }
 }

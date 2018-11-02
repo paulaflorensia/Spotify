@@ -1,5 +1,8 @@
 import React, { Component } from 'react';
-import { Link } from 'react-router-dom';
+//import { Link } from 'react-router-dom';
+import SearchBox from '../searchBox/searchBox';
+import FlowHistory from '../flowHistory/flowHistory';
+import ListResults from '../searchResult/listResults';
 
 
 class Results extends Component {
@@ -7,11 +10,9 @@ class Results extends Component {
         return (
             <div>
                 <nav className="Results">
-                    <ul>
-                        <li><Link to="/artist">Artist</Link></li>
-                        <li><Link to="/albums">Album</Link></li>
-                        <li><Link to="/songs">songs</Link></li>
-                    </ul>
+                    <SearchBox></SearchBox>
+                    <FlowHistory></FlowHistory>
+                    <ListResults></ListResults>
                 </nav>
             </div>
         );

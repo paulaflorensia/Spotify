@@ -7,7 +7,8 @@ import search_icon from '../../assets/search_icon.svg';
 
 
 class SearchBox extends Component {
-    render() {
+
+        render() {
         return (
             <div>
                 <form className="search-box">

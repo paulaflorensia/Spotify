@@ -4,10 +4,10 @@ import { NavLink } from 'react-router-dom';
 import './flowHistory.css';
 
 
-const FlowHisotry = () => {
+const FlowHistory = () => {
         return (
             <div className="flow-history__nav">
-                <NavLink className="flow-history__link-home" to="/home">Home</NavLink>
+                <NavLink className="flow-history__link-home" to="/callback">New search</NavLink>
                 <li className="flow-history__link">Results:</li>
                 <NavLink className="flow-history__link" to="/artist">Artist</NavLink>
                 <NavLink className="flow-history__link" to="/albums">Albums</NavLink>
@@ -17,4 +17,4 @@ const FlowHisotry = () => {
 
     };
 
-export default FlowHisotry;
+export default FlowHistory;
