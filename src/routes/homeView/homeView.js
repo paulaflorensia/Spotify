@@ -14,8 +14,7 @@ class homeView extends Component {
                 <div>
                     <div className="home-view__welcome">
                         <p className="home-view__paragraph">
-                        Well done, just enter an artist's name in the following search box and enjoy!
-                        </p>
+                        Well done, just enter the name of an artist in the following search box and enjoy it!                        </p>
                         <SearchBox></SearchBox>
                     </div>   
                 </div>

@@ -12,8 +12,8 @@ class Selection extends Component {
                 <article className="selection">
                 Album
                 </article>
-                <button type="search" className="prueba">
-                        <Link to="/songs" className="prueba2">Select Album</Link>
+                <button type="select" className="selection__button">
+                        <Link to="/songs" className="selection__select-link">Select Album</Link>
                 </button>
             </div>
         );
