@@ -28,13 +28,22 @@
     margin-bottom: 3px;
 }
 
-.search-box__icon  {
+.search-box__button-icon  {
     height: 29px;
     
 }
 
-.search-box__link {
+.search-box__button-link {
     margin: 0;
     padding: 0;
 }
 
+.search-box__searching {
+    display: block;
+    margin-top: 8%;
+    position: absolute;
+    margin-left: 25%;
+    color: white;
+    font-size: 1.2em;
+    text-align: center;
+}
