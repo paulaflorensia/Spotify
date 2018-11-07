@@ -19,7 +19,7 @@ class homeView extends Component {
 
         this.token = parsed.access_token;
         this.state = {mydata: 
-                [this.token],
+                [this.client_id, this.redirect_uri, this.response_type, this.scope, this.token],
             }
             console.log("see: ", this.state)
 

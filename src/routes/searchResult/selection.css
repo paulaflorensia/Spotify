@@ -1,0 +1,21 @@
+.selection {
+margin: auto;
+}
+
+
+.selecion__artist-selected-image {
+    width: 150px;
+    height: 150px;
+    position: relative;
+}
+
+.selecion__artist-selected-title {
+    padding: 5px;
+    text-decoration: none;
+}
+
+.selection__link {
+    color: white;
+    text-decoration: none;
+}
+

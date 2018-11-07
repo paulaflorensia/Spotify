@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
-
 //css
 import './searchBox.css';
 //assets
@@ -16,30 +15,26 @@ class SearchBox extends Component {
         handleChange = (event) => {
             this.setState({ artist: event.target.value});
             this.setState ({[event.target.artist]: event.target.value});
-            console.log(this.state.artist)
-
         };
 
         handleSubmit = (event) => {
             event.preventDefault()
-            console.log(this.state);
         };
         
     
         getArtist = async () => {     
                 var api_search = 'https://api.spotify.com/v1/search?q=';
                 var type = '&type=artist'
-                var artist = 'queen'
-                const response = await fetch(api_search+artist+type, {
+                var artist = this.state.artist
+                var limit = '&limit=7'
+                const response = await fetch(api_search+artist+type+limit, {
                 method: 'get',
                 headers: new Headers({
-                    'Authorization': 'Bearer BQBnAgTiviUTc7MC_-97mIv5c4gOok_IgKFUDV87iYkFYOT8EPA5A-1YcBxIRelMbzM0_LIJFnzMnUhLlhyvEzotC_WdfLlydR91FR-S_sJwTyCKyudKUlOvXuJHl36Lz6H9FU9dmHjbdKAsNxbe0CcQhYo5uGuF1h0XPTBPMbNqo6FfmE4oVNg9sJuLfehhFbrIGwB9wyglJKqEcmGoR0Ff5cSN0QZDm1gE3g1f0VAYhPipVsu1NC2XQDGcrRnpdne5ay5kEX8'
+                    'Authorization': 'Bearer BQBjnbn7U1UL2kDpVnJuguMkzzb6xiOZDJqsp8G6hRXjLEd4H5i53BZfxFnbIicL9G3kczm1IMHnq311J8mqxtH67T9KKTCxVtInfkDM9FnM02VkQfZJPbWaHNXtv-jPy0xCqyZ7thzJTluxs4FRBXR7qRTP49jNYZ14FxTgwZw-wqwa8WgIQv39x2WOsWkM1dhyWK60sljUd8fkH7pVYlKBFq-Cf-8Kco-lW-2qoXGICbVQbL33FtfRtIv4peTzc7iYHalGp00'
                 })
             }) 
             const data = await response.json();
                 console.log("reply: ", data)
-
-            return (data.artists.items[0])
         };
 
     render() {
@@ -60,8 +55,15 @@ class SearchBox extends Component {
                         <button 
                                 onClick={this.handleSubmit}
                                 type="submit"
-                                className="search-box__button">
-                                <Link to="/artist" className="search-box__button-link"><img src={search_icon} className="search-box__button-icon" alt="icon"/></Link>
+                                className="search-box__button"
+                                value={this.state.artist}>
+
+                                <Link 
+                                        to={{pathname: '/artist', state: {
+                                        artist: this.state.artist}}}
+                                        className="search-box__button-link">
+                                        <img src={search_icon} className="search-box__button-icon"                                     alt="icon"/>
+                                </Link>
                         </button>
                         <div className="search-box__searching">
                             {this.state.artist || !this.state.searching ? (
@@ -71,11 +73,9 @@ class SearchBox extends Component {
                                 ) : (<p></p>)}
                         </div>
                     </form>
-                    
-                        <div>
-                            <img src={this.getArtist()} alt="artist"/>
-                        </div>
-                   
+                    <div>
+                        <img src={this.getArtist()} alt=""/>
+                    </div>
             </div>
         );
     }

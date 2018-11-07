@@ -1,5 +1,35 @@
 
-.list-results__button {
-    position: inherit;
-    margin-top: 6%;
+.list-results {
+    display: flex;
+    padding: 10px;
+    margin-left: 25%;
+}
+
+.list-result__list-artist {
+    text-align: left; 
+    width: 30%;
+    height: 100px;
+    position: relative;
+    background-color: rgba(255, 255, 255, .20);
+    list-style: none;
+    margin-right: 15px;
+    margin-left: 15px;
+    
+}
+
+.list-result__list-artist-image {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+}
+
+.list-result__list-artist-title {
+    padding: 5px;
+    margin-left: 105px;
+    text-decoration: none;
+}
+
+.list-results__link {
+    color: white;
+    text-decoration: none;
 }
