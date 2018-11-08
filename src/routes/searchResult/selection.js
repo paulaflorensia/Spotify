@@ -17,26 +17,45 @@ class Selection extends Component {
                 <SearchBox></SearchBox>
                 <FlowHistory></FlowHistory>
                 <article className="selection">
-                    <div className="selecion__artist-selected">
-                            <img src={artist} className="selecion__artist-selected-image" alt="artist"/>
-                            <Link to="/artist" className="selection__link">
-                                <h4 className="selecion__artist-selected-title">Artista Selected</h4>
-                            </Link>
+                    <div className="selection__artist-selected">
+                        <img src={artist} className="selection__artist-selected-image" alt="artist"/>
+                        <Link to="/artist" className="selection__link">
+                            <h4 className="selection__artist-selected-title">ARTIST SELECTED</h4>
+                        </Link>
+                        <div className="selection__description">
+                                <ul className="selection__description-list">
+                                    <li className="selection__description-details">Genres:</li>
+                                    <li className="selection__description-details">Followers:</li>
+                                    <li className="selection__description-details">Popularity:</li>
+                                </ul>
+                        </div>   
                     </div>
                 </article>
                 <div className="list-results__cont">
                     <ul className="list-results">
-                        <li className="list-result__list-artist">
-                            <img src={cover} className="list-result__list-artist-image" alt="artist"/>
+                        <li className="list-results__list-artist">
                             <Link to="/songs" className="list-results__link">
-                                <h4 className="list-result__list-artist-title">Album</h4>
+                                <img src={cover} className="list-results__list-artist-image" alt="artist"/>
+                                <p className="list-results__list-artist-title">Album</p>
                             </Link>
+                            <div className="list-results__description">
+                                <ul className="list-results__description-artist">
+                                    <li className="list-results__description-list">2035:</li>
+                                    <li className="list-results__description-list">Type:</li>
+                                </ul>
+                            </div>
                         </li>
-                        <li className="list-result__list-artist">
-                            <img src={cover} className="list-result__list-artist-image" alt="artist"/>
+                        <li className="list-results__list-artist">
                             <Link to="/songs" className="list-results__link">
-                                <h4 className="list-result__list-artist-title">Album</h4>
+                                <img src={cover} className="list-results__list-artist-image" alt="artist"/>
+                                <p className="list-results__list-artist-title">Album</p>
                             </Link>
+                            <div className="list-results__description">
+                                <ul className="list-results__description-artist">
+                                    <li className="list-results__description-list">2023</li>
+                                    <li className="list-results__description-list">Type:</li>
+                                </ul>
+                            </div>
                         </li>
                     </ul>
                 </div>

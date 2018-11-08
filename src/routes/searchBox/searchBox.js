@@ -30,7 +30,7 @@ class SearchBox extends Component {
                 const response = await fetch(api_search+artist+type+limit, {
                 method: 'get',
                 headers: new Headers({
-                    'Authorization': 'Bearer BQBjnbn7U1UL2kDpVnJuguMkzzb6xiOZDJqsp8G6hRXjLEd4H5i53BZfxFnbIicL9G3kczm1IMHnq311J8mqxtH67T9KKTCxVtInfkDM9FnM02VkQfZJPbWaHNXtv-jPy0xCqyZ7thzJTluxs4FRBXR7qRTP49jNYZ14FxTgwZw-wqwa8WgIQv39x2WOsWkM1dhyWK60sljUd8fkH7pVYlKBFq-Cf-8Kco-lW-2qoXGICbVQbL33FtfRtIv4peTzc7iYHalGp00'
+                    'Authorization': 'Bearer BQAF7XB3KZgETEhhz226YBxtlEnyv-ZA0IVWm3dAseUkyi8Uuki1mFfvqUTfjbuk0dCPfGPu6Zfk44BVP_gjESlEJ6FNBXNDGvtzKYYPDyuTYlp5lsIDZzR__efV7TD1M5n_Bi6P0p0mmrGjztNZQLM5UZhe_-EzDxYVVsFcRykWz0d7q7aenP0g62UeyxM77GN2Y4M5eSiqcM-2_UZIzZVJ3fESMbx4GUd9f-wNYJUGALEPSdO4rVIlD2a0BPTmx3Rpb3rYL54'
                 })
             }) 
             const data = await response.json();

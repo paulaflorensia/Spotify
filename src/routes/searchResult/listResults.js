@@ -19,32 +19,60 @@ class ListResults extends Component {
                 <FlowHistory/>
                 <div className="list-results__cont">
                     <ul className="list-results">
-                        <li className="list-result__list-artist">
-                            <img src={artist} className="list-result__list-artist-image" alt="artist"/>
+                        <li className="list-results__list-artist">
                             <Link to="/albums" className="list-results__link">
-                                <h4 className="list-result__list-artist-title">Artist Name</h4>
+                                <img src={artist} className="list-results__list-artist-image" alt="artist"/>
+                                <h5 className="list-results__list-artist-title">ARTIST NAME</h5>
                             </Link>
+                            <div className="list-results__description">
+                                <ul className="list-results__description-artist">
+                                    <li className="list-results__description-list">Genres:</li>
+                                    <li className="list-results__description-list">Followers:</li>
+                                    <li className="list-results__description-list">Popularity:</li>
+                                </ul>
+                            </div>
                         </li>
-                        <li className="list-result__list-artist">
-                            <img src={artist} className="list-result__list-artist-image" alt="artist"/>
+                        <li className="list-results__list-artist">
                             <Link to="/albums" className="list-results__link">
-                                <h4 className="list-result__list-artist-title">Artist Name</h4>
+                                <img src={artist} className="list-results__list-artist-image" alt="artist"/>
+                                <h5 className="list-results__list-artist-title">ARTIST NAME</h5>
                             </Link>
+                            <div className="list-results__description">
+                                <ul className="list-results__description-artist">
+                                    <li className="list-results__description-list">Genres:</li>
+                                    <li className="list-results__description-list">Followers:</li>
+                                    <li className="list-results__description-list">Popularity:</li>
+                                </ul>
+                            </div>
                         </li>
-                    </ul>
-                    <ul className="list-results">    
-                        <li className="list-result__list-artist">
-                            <img src={artist} className="list-result__list-artist-image" alt="artist"/>
+                    </ul>  
+                    <ul className="list-results">  
+                        <li className="list-results__list-artist">
                             <Link to="/albums" className="list-results__link">
-                                <h4 className="list-result__list-artist-title">Artist Name</h4>
+                                <img src={artist} className="list-results__list-artist-image" alt="artist"/>
+                                <h5 className="list-results__list-artist-title">ARTIST NAME</h5>
                             </Link>
+                            <div className="list-results__description">
+                                <ul className="list-results__description-artist">
+                                    <li className="list-results__description-list">Genres:</li>
+                                    <li className="list-results__description-list">Followers:</li>
+                                    <li className="list-results__description-list">Popularity:</li>
+                                </ul>
+                            </div>
                         </li>
-                        <li className="list-result__list-artist">
-                            <img src={artist} className="list-result__list-artist-image" alt="artist"/>
+                        <li className="list-results__list-artist">
                             <Link to="/albums" className="list-results__link">
-                                <h4 className="list-result__list-artist-title">Artist Name</h4>
+                                <img src={artist} className="list-results__list-artist-image" alt="artist"/>
+                                <h5 className="list-results__list-artist-title">ARTIST NAME</h5>
                             </Link>
-                        </li>                       
+                            <div className="list-results__description">
+                                <ul className="list-results__description-artist">
+                                    <li className="list-results__description-list">Genres:</li>
+                                    <li className="list-results__description-list">Followers:</li>
+                                    <li className="list-results__description-list">Popularity:</li>
+                                </ul>
+                            </div>
+                        </li>                     
                     </ul>
                 </div>
             </div>
